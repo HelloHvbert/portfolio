@@ -1,0 +1,16 @@
+.container {
+  padding-top: 1rem;
+  justify-content: center;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  flex-grow: 3;
+  /* background: #4e4a4a; */
+  background: #635454;
+  /* background: linear-gradient(90deg, #635454 0%, #6d3333 100%); */
+}
+.site {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}

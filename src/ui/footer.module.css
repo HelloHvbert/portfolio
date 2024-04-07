@@ -1,0 +1,23 @@
+.footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #282222;
+  max-width: 100%;
+  color: #fb4e4e;
+  font-size: 23px;
+  padding: 25px 0;
+  margin-top: auto;
+}
+
+@media screen and (min-width: 480px) and (max-width: 639px) {
+  .footer {
+    font-size: 18px;
+  }
+}
+
+@media screen and (min-width: 640px) and (max-width: 1024px) {
+  .footer {
+    font-size: 20px;
+  }
+}

@@ -1,0 +1,58 @@
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: stretch;
+  font-family: Helvetica;
+  min-width: 80%;
+  max-width: 90%;
+  flex-grow: 1;
+  animation: fadeIn 0.8s both;
+
+  margin: 0.5rem 0 2rem 0;
+}
+
+.label {
+  letter-spacing: 4px;
+  font-size: 3.5rem;
+  font-weight: bold;
+  margin-top: 1rem;
+  color: #fb4e4e;
+  animation: slideIn 0.4s ease-in-out;
+}
+
+@keyframes slideIn {
+  from {
+    transform: translateY(-300%);
+  }
+  to {
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@media screen and (min-width: 640px) and (max-width: 1023px) {
+  .container {
+    flex-direction: column;
+    flex-grow: 0;
+    align-items: center;
+    gap: 2rem;
+  }
+}
+
+@media screen and (max-width: 640px) {
+  .container {
+    flex-direction: column;
+    flex-grow: 0;
+    align-items: center;
+    gap: 2rem;
+  }
+}

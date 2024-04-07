@@ -1,0 +1,34 @@
+.error {
+  background-color: #282222;
+  display: flex;
+  width: 100vw;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.label {
+  letter-spacing: 5px;
+  font-size: 4em;
+  color: #fb4e4e;
+  text-align: center;
+}
+.button {
+  background-color: #635454;
+  color: #ffffff;
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-weight: bold;
+  font-size: 1.5em;
+}
+
+.button:hover {
+  background-color: gray;
+  color: #fb4e4e;
+}
+
+.button:active {
+  background-color: rgb(86, 84, 84);
+  color: #fb4e4e;
+}

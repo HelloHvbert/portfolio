@@ -1,0 +1,65 @@
+.container {
+  display: flex;
+  justify-content: space-between;
+  min-width: 100%;
+  gap: 5rem;
+  padding: 1rem;
+}
+
+.label {
+  width: 50%;
+  transform: translateX(150%);
+  letter-spacing: 2px;
+  font-size: 3.5rem;
+  font-weight: bold;
+  margin-bottom: 10px;
+  color: #fb4e4e;
+  display: flex;
+  place-items: center;
+}
+
+.courses {
+  width: 50%;
+  transform: translateX(-100%);
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+@media screen and (max-width: 1023px) {
+  .container {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    margin: 0 auto;
+    padding: 2rem 1rem;
+    width: auto;
+    max-width: 100%;
+  }
+  .label {
+    width: 80%;
+    text-align: center;
+    transform: translateX(0%);
+    font-size: 4rem;
+    display: flex;
+    place-content: center;
+  }
+  .courses {
+    padding: 1rem;
+    text-align: center;
+    width: 80%;
+    transform: translateX(0%);
+  }
+  .container {
+    margin: 0 auto;
+    margin-right: 0;
+    padding: 0;
+  }
+}
+
+@media screen and (max-width: 479px) {
+  .label {
+    font-size: 3rem;
+    margin-bottom: 0;
+  }
+}

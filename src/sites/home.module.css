@@ -1,0 +1,39 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-width: 80%;
+}
+
+.header {
+  font-size: 3rem;
+  overflow: hidden;
+  border-right: 0.15em solid #fb4e4e;
+  white-space: nowrap;
+  color: #fff;
+  text-transform: uppercase;
+  margin: 0 auto;
+  letter-spacing: 0.14em;
+  animation: typing 3.5s steps(25, end), blink-caret 0.5s step-end infinite;
+}
+
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+/* The typewriter cursor effect */
+@keyframes blink-caret {
+  from,
+  to {
+    border-color: transparent;
+  }
+  50% {
+    border-color: #fff;
+  }
+}
