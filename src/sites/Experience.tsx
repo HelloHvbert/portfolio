@@ -3,9 +3,9 @@ import styles from "./experience.module.css";
 
 const expData = {
   job: "CRM Developer",
-  company: "Company A",
-  startDate: "Jan 2020",
-  endDate: "Present",
+  company: "T-Mobile Polska",
+  startDate: "07.2023",
+  endDate: "12.2023",
   technologies: ["JavaScript", "Python", "SQL"],
   description: [
     "Database administration and design",
@@ -25,9 +25,9 @@ export default function Experience() {
       <div className={styles.label}>Experience</div>
       <ExpItem
         job={expData.job}
-        company="T-Mobile Polska"
-        startDate="07.2023"
-        endDate="12.2024"
+        company={expData.company}
+        startDate={expData.startDate}
+        endDate={expData.endDate}
         technologies={expData.technologies}
         description={expData.description}
       />

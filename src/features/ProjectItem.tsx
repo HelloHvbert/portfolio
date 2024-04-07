@@ -17,8 +17,6 @@ export default function ProjectItem({
   description,
   repo,
 }: ProjectItemProps) {
-  console.log(techStack);
-
   return (
     <div className={styles.inner_container}>
       <div className={styles.upper}>
