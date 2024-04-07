@@ -18,7 +18,7 @@ export default function Welcome() {
       </div>
       <div className={styles.subheader}>
         <div className={styles.photo}>
-          <img src="./picture.jpg" alt="profile picture" />
+          <img src="picture.jpg" alt="profile picture" />
         </div>
         <div className={styles.desc}>
           I'm a passionate IT student at the crossroads of creativity and
