@@ -101,13 +101,14 @@ export default function Projects() {
       <div className={styles.label}>Projects</div>
       <div className={styles.container}>
         <br />
-        {projects.map((project) => (
+        {projects.map((project, index) => (
           <ProjectItem
             title={project.title}
             images={project.images}
             techStack={project.techStack}
             description={project.description}
             repo={project.repo}
+            key={index}
           />
         ))}
       </div>
