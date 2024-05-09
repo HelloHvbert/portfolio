@@ -46,6 +46,18 @@ const projects: Project[] = [
     repo: "https://github.com/HelloHvbert/react-express-bar-menu",
   },
   {
+    title: "URL Shortener",
+    techStack: ["Golang", "Gin", "Cobra", "MongoDB", "Docker"],
+    repo: "https://github.com/HelloHvbert/URL-shortener",
+    images: [
+      <FaGolang size={40} color="#4fe8e5" />,
+      <SiMongodb size={40} color="#68c967" />,
+      <FaDocker size={40} color="#3373d4" />,
+    ],
+    description:
+      "URL shortener service written in Go. This project uses the Gin web framework to create a RESTful API that shortens URLs and redirects users to the original URL when they visit the shortened link. The application also uses MongoDB to store and retrieve the original URLs and their corresponding shortened versions. Docker is used to containerize the application for easy deployment and scaling.",
+  },
+  {
     title: "Portfolio",
     images: [
       <FaReact size={40} color="cyan" />,
