@@ -24,9 +24,19 @@
 .education {
   display: flex;
   flex-direction: row;
+  flex-grow: 0;
   justify-content: space-between;
-  min-width: 90%;
-  gap: 5rem;
+  align-items: center;
+  min-width: 100%;
+  margin: 0 auto;
+  gap: auto;
+  padding: 0 auto;
+}
+
+.education > div {
+  min-width: 50%;
+  justify-content: center;
+  align-items: center;
 }
 
 .courses {

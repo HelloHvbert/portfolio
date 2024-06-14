@@ -1,5 +1,5 @@
 .item > h3 {
-  white-space: nowrap;
+  white-space: wrap;
   letter-spacing: 2px;
   color: #fb4e4e;
   font-size: 1.4rem;
