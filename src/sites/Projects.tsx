@@ -13,6 +13,7 @@ import { TiHtml5 } from "react-icons/ti";
 import { FaDocker, FaGolang } from "react-icons/fa6";
 import { TbFileTypeSql, TbSql } from "react-icons/tb";
 import { BsBootstrapFill } from "react-icons/bs";
+import { useTranslation } from "react-i18next";
 
 type Project = {
   title: string;
@@ -108,9 +109,11 @@ const projects: Project[] = [
 ];
 
 export default function Projects() {
+  const { t } = useTranslation();
+
   return (
     <>
-      <div className={styles.label}>Projects</div>
+      <div className={styles.label}>{t("projects.projects")}</div>
       <div className={styles.container}>
         <br />
         {projects.map((project, index) => (
@@ -118,7 +121,7 @@ export default function Projects() {
             title={project.title}
             images={project.images}
             techStack={project.techStack}
-            description={project.description}
+            description={t("projects.descriptions").split(";")[index]}
             repo={project.repo}
             key={index}
           />

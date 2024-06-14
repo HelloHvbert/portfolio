@@ -1,7 +1,10 @@
+import { useTranslation } from "react-i18next";
 import styles from "./welcome.module.css";
 import { FaArrowAltCircleDown } from "react-icons/fa";
 
 export default function Welcome() {
+  const { t } = useTranslation();
+
   return (
     <>
       <div className={styles.container}>
@@ -12,7 +15,8 @@ export default function Welcome() {
         </div> */}
 
         <div className={styles.header}>
-          Hello there🖐, my name is <span className={styles.name}>Hubert</span>
+          {t("home.welcome")}{" "}
+          <span className={styles.name}>{t("home.name")}</span>
           ...
         </div>
       </div>
@@ -21,13 +25,7 @@ export default function Welcome() {
           <img src="picture.jpg" alt="profile picture" />
         </div>
         <div className={styles.desc}>
-          I'm a passionate IT student at the crossroads of creativity and
-          technology, diving deep into the world of Web Development and Software
-          Engineering. With a keen eye for detail and a relentless drive to
-          innovate, I'm on a mission to craft seamless digital experiences and
-          robust software solutions. Explore my portfolio to witness my journey
-          through coding challenges, collaborative projects, and my continuous
-          quest for learning and growth in the tech arena.
+          {t("home.description")}
           <div className={styles.drop}>
             <a href="#courses">
               <FaArrowAltCircleDown size={50} />

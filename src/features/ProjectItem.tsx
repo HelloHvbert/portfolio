@@ -1,6 +1,7 @@
 import styles from "./projectItem.module.css";
 import { FaGithubSquare } from "react-icons/fa";
 import { ReactNode } from "react";
+import { useTranslation } from "react-i18next";
 
 type ProjectItemProps = {
   title: string;
@@ -17,6 +18,8 @@ export default function ProjectItem({
   description,
   repo,
 }: ProjectItemProps) {
+  const { t } = useTranslation();
+
   return (
     <div className={styles.inner_container}>
       <div className={styles.upper}>
@@ -25,13 +28,13 @@ export default function ProjectItem({
       </div>
       <div className={styles.bottom}>
         <div className={styles.tech_stack}>
-          <div className={styles.label}>Stack:</div>
+          <div className={styles.label}>{t("projects.stack")}:</div>
           <div className={styles.techs}>{techStack.join(", ")}</div>
         </div>
         <div className={styles.description}>{description}</div>
         <a href={repo} target="_blank" rel="noreferrer">
           <div className={styles.repo}>
-            <span>Respository link</span>
+            <span>{t("projects.repoLink")}</span>
             <FaGithubSquare size={30} />
           </div>
         </a>

@@ -1,6 +1,9 @@
+import { useTranslation } from "react-i18next";
 import ExpItem from "../features/ExpItem";
 import styles from "./experience.module.css";
 
+// Put data in same order as in translation file
+// duties in format "duty1;duty2;..."
 const expData = {
   job: "CRM Developer",
   company: "T-Mobile Polska",
@@ -20,16 +23,18 @@ const expData = {
 };
 
 export default function Experience() {
+  const { t } = useTranslation();
+
   return (
     <div className={styles.container}>
-      <div className={styles.label}>Experience</div>
+      <div className={styles.label}>{t("experience.experience")}</div>
       <ExpItem
         job={expData.job}
         company={expData.company}
         startDate={expData.startDate}
         endDate={expData.endDate}
         technologies={expData.technologies}
-        description={expData.description}
+        description={t("experience.duties").split(";")}
       />
     </div>
   );

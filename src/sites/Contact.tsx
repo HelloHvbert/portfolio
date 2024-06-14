@@ -3,11 +3,14 @@ import styles from "./contact.module.css";
 import { VscGithubInverted } from "react-icons/vsc";
 import { SiLinkedin } from "react-icons/si";
 import { MdMailOutline } from "react-icons/md";
+import { useTranslation } from "react-i18next";
 
 export default function Contact() {
+  const { t } = useTranslation();
+
   return (
     <div className={styles.links_container}>
-      <div className={`${styles.label}`}>Contact</div>
+      <div className={`${styles.label}`}>{t("contact.contact")}</div>
 
       <Social
         message="HelloHvbert"

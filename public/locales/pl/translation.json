@@ -1,0 +1,34 @@
+{
+  "routes": {
+    "projects": "Projekty",
+    "experience": "Doświadczenie",
+    "contact": "Kontakt"
+  },
+  "home": {
+    "welcome": "Witaj🖐, nazywam się ",
+    "name": "Hubert",
+    "description": "Jestem pasjonatem informatyki, który łączy kreatywność z technologią, zagłębiając się w świat webdevu i inżynierii oprogramowania. Zawsze zwracam uwagę na szczegóły. Moim celem jest tworzenie innowacyjnych i solidnych rozwiązań programistycznych. Zapraszam do obejrzenia mojego portfolio, gdzie zobaczysz moją drogę przez wyzwania związane z kodowaniem, projekty zespołowe oraz ciągłą chęć nauki i rozwoju w branży IT.",
+    "courses": "Kursy",
+    "education": "Edukacja",
+    "university": "Szkoła Główna Gospodarstwa Wiejskiego",
+    "major": "Informatyka",
+    "degree": "Inżynier",
+    "present": "Obecnie"
+  },
+  "contact": {
+    "contact": "Kontakt"
+  },
+  "projects": {
+    "projects": "Projekty",
+    "stack": "Użyto",
+    "repoLink": "Link do repozytorium",
+    "descriptions": "Interaktywna i responsywna aplikacja menu dla restauracji z wykorzystaniem React.js, Express.js i MongoDB. Zaimplementowano kluczowe funkcje, takie jak dynamiczne listy produktów, zarządzanie koszykiem, przetwarzanie zamówień za pomocą RESTful API oraz zarządzanie stanem po stronie klienta przy użyciu Redux Toolkit. Poprawiono doświadczenie użytkownika poprzez efektywną nawigację i mechanizmy informacyjne na czas rzeczywisty.;Serwis skracania adresów URL napisany w Go. Projekt ten wykorzystuje framework internetowy Gin do utworzenia RESTful API, które skraca adresy URL i przekierowuje użytkowników do oryginalnego adresu URL, gdy odwiedzą skrócony link. Aplikacja korzysta również z MongoDB do przechowywania i pobierania oryginalnych adresów URL i ich odpowiadających im skróconych wersji. Docker jest używany do skonteneryzowania aplikacji w celu łatwego wdrażania i skalowania.;Strona, którą obecnie przeglądasz.;RESTful API w Go, służące jako backend dla dynamicznej aplikacji internetowej. Zaimplementowano kluczowe funkcje, takie jak uwierzytelnianie użytkownika, trwałość danych i przetwarzanie danych w czasie rzeczywistym. Wykorzystano Docker do bezproblemowego wdrażania i skalowania.;Zabawna i interaktywna gra słowna zbudowana w React. Ten klon popularnej gry Wordle oferuje elegancki interfejs użytkownika i angażującą rozgrywkę, wszystko opracowane przy użyciu nowoczesnych technologii internetowych.;Pełnoprawny system zarządzania treścią przy użyciu PHP. Ten wszechstronny projekt zawiera zaawansowane funkcje, takie jak rejestracja i uwierzytelnianie użytkowników, zarządzanie produktami oraz zintegrowany koszyk zakupowy, wszystko to wspierane przez bazę danych MySQL. Zawiera również samodzielnie opracowany front-end, używający Bootstrap do zapewnienia responsywnego i intuicyjnego interfejsu użytkownika."
+  },
+  "experience": {
+    "experience": "Doświadczenie",
+    "at": "w",
+    "technologies": "Technologie",
+    "description": "Opis",
+    "duties": "Administracja i projektowanie baz danych;Analiza wymagań biznesowych;Projektowanie i wdrażanie rozwiązań Siebel CRM;Tworzenie skryptów i interfejsów użytkownika;Testowanie i optymalizacja;Pisanie dokumentacji technicznej;Metodologia Agile scrum, Jira;Aktualizacje i ulepszenia systemu"
+  }
+}

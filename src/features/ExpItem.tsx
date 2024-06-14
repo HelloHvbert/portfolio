@@ -1,3 +1,4 @@
+import { useTranslation } from "react-i18next";
 import styles from "./expItem.module.css";
 
 type ExpProps = {
@@ -17,11 +18,13 @@ export default function ExpItem({
   technologies,
   description,
 }: ExpProps) {
+  const { t } = useTranslation();
+
   return (
     <div className={styles.container}>
       <div className={styles.title}>
         <span className={styles.job}>{job}</span>{" "}
-        <span className={styles.at}>at</span>{" "}
+        <span className={styles.at}>{t("experience.at")}</span>{" "}
         <span className={styles.company}>{company}</span>
       </div>
       <div className={styles.inner}>
@@ -31,12 +34,12 @@ export default function ExpItem({
           {endDate}
         </div>
         <div className={styles.tech}>
-          <span className={styles.label}>Technologies:</span>{" "}
+          <span className={styles.label}>{t("experience.technologies")}:</span>{" "}
           {technologies.join(", ")}
         </div>
         <div className={styles.desc}>
           <div className={styles.label} style={{ marginLeft: "0.1rem" }}>
-            Description:
+            {t("experience.description")}:
           </div>
           <div>
             <ul className={styles.list}>

@@ -9,6 +9,7 @@ import Home from "./sites/Home.tsx";
 import Experience from "./sites/Experience.tsx";
 import Contact from "./sites/Contact.tsx";
 import Projects from "./sites/Projects.tsx";
+import "./i18n.ts";
 
 const router = createBrowserRouter([
   {

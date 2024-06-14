@@ -1,6 +1,13 @@
-import { FaDocker, FaGolang, FaLaptopCode, FaReact } from "react-icons/fa6";
+import {
+  FaAws,
+  FaDocker,
+  FaGolang,
+  FaLaptopCode,
+  FaReact,
+} from "react-icons/fa6";
 import CourseItem from "./CourseItem";
 import styles from "./courses.module.css";
+import { useTranslation } from "react-i18next";
 
 const courses = [
   {
@@ -23,12 +30,19 @@ const courses = [
     link: "https://www.edx.org/course/cs50s-introduction-to-computer-science",
     icon: <FaLaptopCode size={50} color="#2ad1a7" />,
   },
+  {
+    title: "Ultimate AWS Certified Cloud Practitioner CLF-C02",
+    link: "https://www.udemy.com/course/aws-certified-cloud-practitioner-new",
+    icon: <FaAws size={50} color="#ff9900" />,
+  },
 ];
 
 export default function Courses() {
+  const { t } = useTranslation();
+
   return (
     <div className={styles.container} id="courses">
-      <div className={styles.label}>Courses</div>
+      <div className={styles.label}>{t("home.courses")}</div>
       <div className={styles.courses}>
         {courses.map((course, index) => (
           <CourseItem

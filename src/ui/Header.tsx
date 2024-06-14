@@ -2,11 +2,15 @@ import { useState } from "react";
 import { Link, useLocation } from "react-router-dom";
 import { IoMenu } from "react-icons/io5";
 import styles from "./header.module.css";
+import LanguageSelector from "./LanguageSelector";
+import { useTranslation } from "react-i18next";
 
 export default function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const location = useLocation();
   const { pathname } = location;
+
+  const { t } = useTranslation();
 
   function hideMenu() {
     setIsMenuOpen(false);
@@ -40,7 +44,7 @@ export default function Header() {
           onClick={hideMenu}
         >
           <Link to="/projects" className={styles.linkText}>
-            Projects
+            {t("routes.projects")}
           </Link>
         </div>
         <div
@@ -51,7 +55,7 @@ export default function Header() {
         >
           <Link to="/experience" className={styles.linkText}>
             {" "}
-            Experience{" "}
+            {t("routes.experience")}{" "}
           </Link>{" "}
         </div>
         <div
@@ -63,8 +67,11 @@ export default function Header() {
           {" "}
           <Link to="/contact" className={styles.linkText}>
             {" "}
-            Contact{" "}
+            {t("routes.contact")}{" "}
           </Link>{" "}
+        </div>
+        <div className={styles.link}>
+          <LanguageSelector />
         </div>
       </div>
     </header>
