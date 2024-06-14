@@ -7,7 +7,7 @@ export default function SchoolList() {
 
   return (
     <div className={styles.box}>
-      <ul className={styles.school_list}>
+      <div className={styles.school_list}>
         <SchoolItem
           name={t("home.university")}
           major={t("home.major")}
@@ -15,7 +15,7 @@ export default function SchoolList() {
           startDate="2021"
           endDate={t("home.present")}
         />
-      </ul>
+      </div>
     </div>
   );
 }

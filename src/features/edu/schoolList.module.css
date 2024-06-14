@@ -1,35 +1,55 @@
 .box {
   height: 100%;
-  width: 50%;
+  min-width: 90%;
   display: flex;
   justify-content: center;
 }
 
 .school_list {
-  list-style-type: none;
+  display: flex;
+  justify-content: center;
   color: azure;
   font-size: 1.2rem;
   padding: 0;
-  width: 100%;
+  width: 90%;
 }
 
-@media screen and (max-width: 1023px) {
+@media screen and (max-width: 1200px) {
   .box {
     flex-direction: column;
     align-items: center;
     place-items: center;
     padding: 0;
+    width: 80%;
+    margin: 0 auto;
   }
-  .school_list > li {
-    min-width: 100%;
-    padding: 0.5rem;
+  .school_list > div {
+    min-width: 85%;
+    padding: 1rem;
+    text-align: center;
+  }
+  .school_list {
+    display: flex;
+    min-width: 90%;
+    font-size: 1.5rem;
+    padding: 1rem;
+    align-items: center;
+    place-items: center;
+    margin: 0 auto;
   }
 }
 
 @media screen and (max-width: 479px) {
+  .box {
+    text-align: center;
+    min-width: fit-content;
+    margin: 0 auto;
+  }
   .school_list {
-    min-width: 100%;
+    min-width: 90%;
     font-size: 1rem;
-    padding: 0;
+    padding: 0.5rem;
+    align-items: center;
+    margin: 0 auto;
   }
 }

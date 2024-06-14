@@ -16,7 +16,7 @@ export default function SchoolItem({
   degree,
 }: SchoolItemProps) {
   return (
-    <li className={styles.item}>
+    <div className={styles.item}>
       <h3>{name}</h3>
       <div className={styles.extra_info}>
         <div className={styles.major}>{major}</div>
@@ -25,6 +25,6 @@ export default function SchoolItem({
         </div>
         <div className={styles.degree}>{degree}</div>
       </div>
-    </li>
+    </div>
   );
 }
