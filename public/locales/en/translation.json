@@ -29,6 +29,6 @@
     "at": "at",
     "technologies": "Technologies",
     "description": "Description",
-    "duties": "Development and implementation of features for the internal CRM system, improving business processes;Utilized AWS for infrastructure management and application scaling;Integration of CRM with other internal systems, centralizing data;Testing and optimizing code to ensure system quality and stability;;Implementation of an application enabling employees to book conference rooms in the office;Implementation of features for viewing available rooms, making reservations, and managing bookings;Deployment of Docker container solutions"
+    "duties": "Development and implementation of features for the internal CRM system, improving business processes;Utilized AWS for infrastructure management and application scaling;Integration of CRM with other internal systems, centralizing data;Testing and optimizing code to ensure system quality and stability;;Creating and maintaining UI;Building and maintaining backend services (REST API);Designing, creating, and optimizing data structures and queries;Writing unit and integration tests"
   }
 }

@@ -19,10 +19,10 @@ const expData = [
     ],
   },
   {
-    job: "Full Stack Developer",
-    company: "MindPal",
-    startDate: "01.2024",
-    endDate: "06.2024",
+    job: "Junior Full Stack Developer",
+    company: "CAR NET",
+    startDate: "07.2022",
+    endDate: "07.2023",
     technologies: ["React", "Node.js", "MongoDB", "Docker"],
     description: [
       "Implementation of an application enabling employees to book conference rooms in the office",
