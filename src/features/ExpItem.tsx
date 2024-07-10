@@ -30,7 +30,7 @@ export default function ExpItem({
       <div className={styles.inner}>
         <div className={styles.date}>
           {startDate}
-          {"  "}-{"  "}
+          {" - "}
           {endDate}
         </div>
         <div className={styles.tech}>

@@ -54,6 +54,7 @@
   font-weight: bold;
   display: flex;
   justify-content: flex-start;
+  text-align: center;
 }
 
 .repo {

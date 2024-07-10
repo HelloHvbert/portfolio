@@ -29,6 +29,6 @@
     "at": "at",
     "technologies": "Technologies",
     "description": "Description",
-    "duties": "Database administration and design;Business requirements analysis;Designing and implementing Siebel CRM solutions;Scripting and user interfaces development;Testing and optimization;Writing technical documentation;Agile scrum methodology, Jira;System updates and enhancements"
+    "duties": "Development and implementation of features for the internal CRM system, improving business processes;Utilized AWS for infrastructure management and application scaling;Integration of CRM with other internal systems, centralizing data;Testing and optimizing code to ensure system quality and stability;;Implementation of an application enabling employees to book conference rooms in the office;Implementation of features for viewing available rooms, making reservations, and managing bookings;Deployment of Docker container solutions"
   }
 }
