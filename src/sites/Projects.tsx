@@ -6,9 +6,14 @@ import {
   SiMongodb,
   SiPhp,
   SiRedux,
+  SiSelenium,
   SiTailwindcss,
 } from "react-icons/si";
-import { BiLogoTypescript, BiSolidFileCss } from "react-icons/bi";
+import {
+  BiLogoPostgresql,
+  BiLogoTypescript,
+  BiSolidFileCss,
+} from "react-icons/bi";
 import { TiHtml5 } from "react-icons/ti";
 import { FaDocker, FaGolang } from "react-icons/fa6";
 import { TbFileTypeSql, TbSql } from "react-icons/tb";
@@ -19,11 +24,34 @@ type Project = {
   title: string;
   images: JSX.Element[];
   techStack: string[];
-  description: string;
+  description?: string;
   repo: string;
 };
 
 const projects: Project[] = [
+  {
+    title: "Flashcards learning app",
+    images: [
+      <FaReact size={40} color="cyan" />,
+      <BiLogoTypescript size={40} color="#5767cf" />,
+      <FaGolang size={40} color="#4fe8e5" />,
+      <SiTailwindcss size={40} color="#27dbd8" />,
+      <FaDocker size={40} color="#3373d4" />,
+      <BiLogoPostgresql size={40} color="#0a8afa" />,
+      <SiSelenium size={40} color="#21c42b" />,
+    ],
+    techStack: [
+      "React.js",
+      "Go",
+      "TailwindCSS",
+      "PostgreSQL",
+      "Selenium",
+      "Docker",
+    ],
+    description:
+      "Flashcards learning app that allows users to create, edit, and review flashcards. Implemented key features including user authentication, flashcard management, and real-time data processing. Enhanced user experience through efficient navigation and real-time feedback mechanisms.",
+    repo: "https://github.com/HelloHvbert/qwizzle",
+  },
   {
     title: "Online Bar Menu",
     images: [

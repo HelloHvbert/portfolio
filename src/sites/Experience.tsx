@@ -21,7 +21,7 @@ const expData = [
   {
     job: "Junior Full Stack Developer",
     company: "CAR NET",
-    startDate: "07.2022",
+    startDate: "01.2023",
     endDate: "07.2023",
     technologies: ["React", "Node.js", "MongoDB", "Docker"],
     description: [

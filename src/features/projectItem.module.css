@@ -29,8 +29,14 @@
   margin: 0 auto;
 }
 
+.images {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 1rem;
+}
 .images > * {
   margin: 0 0.3rem;
+  flex-direction: row;
 }
 
 .tech_stack {
@@ -54,7 +60,7 @@
   font-weight: bold;
   display: flex;
   justify-content: flex-start;
-  text-align: center;
+  text-align: left;
 }
 
 .repo {

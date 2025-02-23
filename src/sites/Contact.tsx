@@ -19,7 +19,7 @@ export default function Contact() {
       />
       <Social
         message="Hubert Szarwiński"
-        url="https://www.linkedin.com/in/hubert-szarwi%C5%84ski/"
+        url="https://www.linkedin.com/in/hubert-szarwinski/"
         img={<SiLinkedin size={60} style={{}} color="white" />}
       />
       <Social

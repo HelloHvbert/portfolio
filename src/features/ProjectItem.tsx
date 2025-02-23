@@ -24,7 +24,11 @@ export default function ProjectItem({
     <div className={styles.inner_container}>
       <div className={styles.upper}>
         <div className={styles.title}>{title}</div>
-        <div className={styles.images}>{images}</div>
+        <div className={styles.images}>
+          {images.map((image, index) => (
+            <span key={index}>{image}</span>
+          ))}
+        </div>
       </div>
       <div className={styles.bottom}>
         <div className={styles.tech_stack}>

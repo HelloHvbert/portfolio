@@ -13,6 +13,13 @@ export default function SchoolList() {
           major={t("home.major")}
           degree={t("home.degree")}
           startDate="2021"
+          endDate={"2025"}
+        />
+        <SchoolItem
+          name={t("home.university")}
+          major={t("home.major")}
+          degree={t("home.master")}
+          startDate="2025"
           endDate={t("home.present")}
         />
       </div>
